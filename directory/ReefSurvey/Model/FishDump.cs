@@ -27,4 +27,19 @@ namespace Model
         public double Longitude {get; set;}
         public int SurveyIndex {get; set;}
     }
+
+    public class Location
+    {
+        public string StudyArea { get; set; }
+        public int  RegionID { get; set; }
+        public string SubRegion { get; set; }
+        public int LocationID { get; set; }
+    }
+
+    public class Batch
+    {
+       public int BatchID { get; set; }
+        public string BatchCode { get; set; }
+    }
+
 }

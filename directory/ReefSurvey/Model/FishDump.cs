@@ -1,13 +1,28 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.SqlServer;
 
 namespace Model
 {
 
     public class SurveyContext : DbContext
     {
+        public DbSet<Fish> Fish { get; set; }
+        public DbSet<FishData> FishData {get; set;}
+        public DbSet<Coordinates> Coordinates {get; set;}
+        public DbSet<Location> Location {get; set;}
+        public DbSet<Batch> Batch {get; set;}
+        public DbSet<SurveyData> SurveyData {get; set;}
+        public DbSet<Region> Region {get; set;}
+        public DbSet<Trophic> Trophic {get; set;}
+        public DbSet<Structure> Structure {get; set;}
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Data Source=surveydata.db");
+        }
     }
     public class Fish
+
     {
         public string ScientificName { get; set; }
         public int FishID { get; set; }

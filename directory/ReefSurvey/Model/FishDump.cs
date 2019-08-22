@@ -10,4 +10,12 @@ namespace Model
         public string CommonName { get; set; }
         public int TrophicID { get; set; }
     }
+
+    public class Location
+    {
+        public string StudyArea { get; set; }
+        public int  RegionID { get; set; }
+        public string SubRegion { get; set; }
+        public int LocationID { get; set; }
+    }
 }

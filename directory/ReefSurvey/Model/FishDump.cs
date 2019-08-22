@@ -57,4 +57,16 @@ namespace Model
         public string Management { get; set; }
 
     }
+
+    public class Trophic
+    {
+        public int TrophicID { get; set; }
+        public char TrophicCode { get; set; }
+    }
+    public class Structure
+    {
+        public int StructureID { get; set; }
+        public string StructureType { get; set; }
+
+    }
 }

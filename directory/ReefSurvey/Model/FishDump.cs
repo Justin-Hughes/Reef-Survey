@@ -1,7 +1,12 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace Model
 {
+
+    public class SurveyContext : DbContext
+    {
+
+    }
     public class Fish
     {
         public string ScientificName { get; set; }

@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\danch\\source\\repos\\Reef-Survey\\directory\\ReefSurvey\\ReefSurvey\\ReefSurvey.csproj": {}
+    "C:\\Users\\justi\\OneDrive\\Desktop\\ReefSurvey\\directory\\ReefSurvey\\ReefSurvey\\ReefSurvey.csproj": {}
   },
   "projects": {
-    "C:\\Users\\danch\\source\\repos\\Reef-Survey\\directory\\ReefSurvey\\ReefSurvey\\ReefSurvey.csproj": {
+    "C:\\Users\\justi\\OneDrive\\Desktop\\ReefSurvey\\directory\\ReefSurvey\\ReefSurvey\\ReefSurvey.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danch\\source\\repos\\Reef-Survey\\directory\\ReefSurvey\\ReefSurvey\\ReefSurvey.csproj",
+        "projectUniqueName": "C:\\Users\\justi\\OneDrive\\Desktop\\ReefSurvey\\directory\\ReefSurvey\\ReefSurvey\\ReefSurvey.csproj",
         "projectName": "ReefSurvey",
-        "projectPath": "C:\\Users\\danch\\source\\repos\\Reef-Survey\\directory\\ReefSurvey\\ReefSurvey\\ReefSurvey.csproj",
-        "packagesPath": "C:\\Users\\danch\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danch\\source\\repos\\Reef-Survey\\directory\\ReefSurvey\\ReefSurvey\\obj\\",
+        "projectPath": "C:\\Users\\justi\\OneDrive\\Desktop\\ReefSurvey\\directory\\ReefSurvey\\ReefSurvey\\ReefSurvey.csproj",
+        "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\justi\\OneDrive\\Desktop\\ReefSurvey\\directory\\ReefSurvey\\ReefSurvey\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\danch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\justi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -51,7 +51,12 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true

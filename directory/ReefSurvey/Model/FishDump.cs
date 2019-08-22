@@ -33,4 +33,11 @@ namespace Model
         public string ScientificName { get; set; }
     }
 
+    public class Region
+    {
+        public int RegionID { get; set; }
+        public string RegionName { get; set; }
+        public string Management { get; set; }
+
+    }
 }

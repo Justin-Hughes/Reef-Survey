@@ -39,7 +39,22 @@ namespace Model
     public class Batch
     {
        public int BatchID { get; set; }
-        public string BatchCode { get; set; }
+       public string BatchCode { get; set; }
     }
 
+    public class SurveyData
+    {
+        public int SurveyDate { get; set; }
+        public int SurveyIndex { get; set; }
+        public int BatchID { get; set; }
+        public string ScientificName { get; set; }
+    }
+
+    public class Region
+    {
+        public int RegionID { get; set; }
+        public string RegionName { get; set; }
+        public string Management { get; set; }
+
+    }
 }

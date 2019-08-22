@@ -10,4 +10,11 @@ namespace Model
         public string CommonName { get; set; }
         public int TrophicID { get; set; }
     }
+
+    public class Batch
+    {
+       public int BatchID { get; set; }
+        public string BatchCode { get; set; }
+    }
+
 }

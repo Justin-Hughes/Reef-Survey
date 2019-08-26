@@ -1,9 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.SqlServer;
+using System.ComponentModel.DataAnnotations;
 
 namespace Model
 {
-
     public class SurveyContext : DbContext
     {
         public DbSet<Fish> Fish { get; set; }
@@ -18,12 +17,13 @@ namespace Model
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=surveydata.db");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Integrated Security=true;Database=FishDump");
         }
     }
     public class Fish
 
     {
+        [Key]
         public string ScientificName { get; set; }
         public int FishID { get; set; }
         public string Family { get; set; }
@@ -33,6 +33,7 @@ namespace Model
 
     public class FishData
     {
+        [Key]
         public int FishID { get; set; }
         public int FishCount {get; set;}
         public int StructureID{get; set;}
@@ -42,6 +43,7 @@ namespace Model
 
     public class Coordinates
     {
+        [Key]
         public int LocationID {get; set;}
         public double Latitude {get; set;}
         public double Longitude {get; set;}
@@ -50,6 +52,7 @@ namespace Model
 
     public class Location
     {
+        [Key]
         public string StudyArea { get; set; }
         public int  RegionID { get; set; }
         public string SubRegion { get; set; }
@@ -58,12 +61,14 @@ namespace Model
 
     public class Batch
     {
-       public int BatchID { get; set; }
+        [Key]
+        public int BatchID { get; set; }
        public string BatchCode { get; set; }
     }
 
     public class SurveyData
     {
+        [Key]
         public int SurveyDate { get; set; }
         public int SurveyIndex { get; set; }
         public int BatchID { get; set; }
@@ -72,6 +77,7 @@ namespace Model
 
     public class Region
     {
+        [Key]
         public int RegionID { get; set; }
         public string RegionName { get; set; }
         public string Management { get; set; }
@@ -80,11 +86,13 @@ namespace Model
 
     public class Trophic
     {
+        [Key]
         public int TrophicID { get; set; }
         public char TrophicCode { get; set; }
     }
     public class Structure
     {
+        [Key]
         public int StructureID { get; set; }
         public string StructureType { get; set; }
 

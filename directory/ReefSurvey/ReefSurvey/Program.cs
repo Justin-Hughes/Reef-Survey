@@ -1,4 +1,5 @@
 ﻿using System;
+using ReefSurvey;
 
 namespace ReefSurvey
 {
@@ -6,7 +7,6 @@ namespace ReefSurvey
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
         }
     }
 }
